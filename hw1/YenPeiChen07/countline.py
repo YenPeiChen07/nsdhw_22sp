@@ -1,8 +1,9 @@
-#!/usr/bin/env python3
+#!/usr/bin/env bash
+
+"exec" "$PYTHON_BIN" "$0" "$@"   #  'exec' is a builtin command to execute a command that replace the current process
 
 import sys
 import os.path
-
 
 if len(sys.argv) < 2:
     sys.stdout.write('missing file name\n')
